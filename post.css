@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+header {
+    color: #c03131;
+}
+.logo h1 {
+    text-decoration: none;
+    color: #c03131;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.logo img {
+    width: 20rem;
+    display: block;
+    margin: 0;
+    margin-left: 0;
+}
+.header-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo {
+    margin-right: auto;
+}
+.navegacion a {
+    text-decoration: none;
+    color: #c03131;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+.navegacion ul {
+    display: flex;
+    gap: 4rem;
+}
+.navegacion li {
+    list-style: none;
+}
+.post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 0;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.back-home {
+    color: #c03131;
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: #ffa5a5;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    align-self: flex-start;
+    
+}
+.header-title {
+    width: 90%;
+    font-size: 3rem;
+    color: #c03131;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sub-heading {
+    font: 1.2rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+.post-text {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f5f5f5;
+}
+#progress-bar {
+    height: 5px;
+    background-color: #fad074;
+    width: 0%;
+}
+.share {
+    display: flex;
+    justify-content: center;
+}
+.share a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0 5px 5px 5px;
+    transition: all 400ms ease;
+}
+.share .whatsapp {
+    background-color: #018161cb;
+}
+.share .whatsapp:hover {
+    color: #018161cb;
+    background-color: transparent;
+    border: 1px dashed #018161cb;
+}
+.share .facebook {
+    background-color: #0011ff;
+}
+.share .facebook:hover {
+    color: #0011ff;
+    background-color: transparent;
+    border: 1px dashed #0011ff;
+}
+.share .twitter {
+    background-color: #7cfbff;
+}
+.share .twitter:hover {
+    color: #7cfbff;
+    background-color: transparent;
+    border: 1px dashed #7cfbff;
+}
+.publicidad {
+    width: 130mm; /* 13 cm */
+    height: 35mm; /* 3.5 cm */
+    display: block;
+    margin: 20px auto; /* Centrar */
+    text-align: center;
+}
+footer {
+    background-color: #ffa5a5;
+    border: 1px solid transparent;
+}
+.contenedor-footer {
+    color: #c03131;
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+.contenedor-footer ul {
+    padding: 0;
+}
+.contenedor-footer li {
+    list-style: none;
+}
+.contenedor-footer a {
+    text-decoration: none;
+    color: #000;
+    line-height: 2;
+    font-size: 1.7rem;
+}
+.contenedor-footer a:hover {
+    color: #000;
+}
+.contenedor-footer2 {
+    background-color: #c03131;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+.footer-final {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*Responsive*/
+@media (max-width:800px){
+    .post-container {
+        padding: 0;
+        width: 95%;
+    }
+}
+@media (max-width:768px){
+    section {
+        padding: 2rem 0;
+    }
+    .header-content {
+        margin-top: 3rem !important;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-img {
+        height: 370px;
+    }
+    .post-content {
+     margin-top: 9rem !important;   
+    }
+}
+@media (max-width: 570px) {
+    .post-header {
+        height: 390px;
+    }
+    .header-title {
+        width: 100%;
+    }
+    .header-img {
+        height: 340px;
+    }
+    .footer {
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 396px) {
+    .header-title {
+        font-size: 1.4rem;
+    }
+    .header-img {
+        height: 240px;
+    }
+    .post-header {
+        height: 335px;
+    }
+    .post-content {
+        margin-top: 5rem !important;   
+    }
+    .post-text {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin: 10px 0;
+    }
+}
